@@ -1,7 +1,9 @@
 from typing import List
+
 import pygame
-from pygame import display, event, draw
+from pygame import display, draw, event
 from pygame.sprite import Group
+
 from cell import Cell
 
 SCREEN_WIDTH = 800
