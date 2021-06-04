@@ -23,7 +23,10 @@ def create_grid(w: int, h: int) -> List[List[Cell]]:
 pygame.init()
 
 screen = display.set_mode([800, 600])
-grid_group = Group(create_grid(10, 10))
+
+grid = create_grid(20, 20)
+grid[10][10].color = (0, 255, 0)
+grid_group = Group(grid)
 running = True
 
 while running:
